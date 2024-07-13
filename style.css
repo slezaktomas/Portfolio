@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(2, 0, 19);
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.profile-picture {
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+
+.content {
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #ffffff;
+    margin: 0;
+}
+
+h1 .name {
+    color: #ff00ff;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+h2 .profession {
+    color: #ff00ff;
+}
+
+p {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(2, 0, 19, 0.474);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: right;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px 20px;
+    display: block;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff00ff;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: #ff00ff;
+    border-radius: 4px;
+}
